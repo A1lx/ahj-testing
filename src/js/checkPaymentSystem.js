@@ -4,9 +4,9 @@ export default function checkPaymentSystem() {
   input.addEventListener('input', () => {
     const inputValueArr = [...input.value];
     const filters = [...document.querySelectorAll('.icon-filter')];
- 
+
     if (inputValueArr[0] === '2') {
-      //карты Мир
+      // карты Мир
       for (let i = 0; i < filters.length; i++) {
         filters[i].classList.add('filter');
         filters[0].classList.remove('filter');
@@ -30,7 +30,7 @@ export default function checkPaymentSystem() {
         filters[3].classList.remove('filter');
       }
     } else {
-      //все остальные
+      // все остальные
       for (let i = 0; i < filters.length; i++) {
         filters[i].classList.remove('filter');
       }

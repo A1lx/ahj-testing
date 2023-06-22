@@ -1,4 +1,4 @@
-import luhnAlgorithm from "./luhnAlgorithm";
+import luhnAlgorithm from './luhnAlgorithm';
 
 export default function checkValidity() {
   const input = document.querySelector('.input');
@@ -7,16 +7,16 @@ export default function checkValidity() {
 
   btn.addEventListener('click', (e) => {
     e.preventDefault();
-    
+
     const reportBx = document.querySelector('.report-box');
 
     if (reportBx) {
       reportBx.remove();
     }
-  
+
     const reportBox = document.createElement('div');
     reportBox.classList.add('report-box');
-  
+
     if (luhnAlgorithm(input.value)) {
       reportBox.innerHTML = `
       <span class="valid-success">Номер карты прошел валидацию</span>

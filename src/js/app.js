@@ -1,5 +1,5 @@
-import checkValidity from "./checkValidity";
-import checkPaymentSystem from "./checkPaymentSystem";
+import checkValidity from './checkValidity';
+import checkPaymentSystem from './checkPaymentSystem';
 
 checkValidity();
 checkPaymentSystem();

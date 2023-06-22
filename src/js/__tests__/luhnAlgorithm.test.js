@@ -1,4 +1,4 @@
-import luhnAlgorithm from "../luhnAlgorithm";
+import luhnAlgorithm from '../luhnAlgorithm';
 
 test('invalid', () => {
   const result = luhnAlgorithm('123');
